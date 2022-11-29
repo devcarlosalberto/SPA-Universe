@@ -1,0 +1,111 @@
+:root {
+    font-size: 62.5%;
+
+    --ff-body: "Roboto", sans-serif;
+
+    --fs-menu: 2.2rem;
+    --fs-title: 4.8rem;
+    --fs-button: 1.4rem;
+    --fs-text: 1.8rem;
+
+    --fc-menu-link: #C4C4CC;
+    --fc-text: #E1E1E6;
+    --fc-button: #FFFFFF;
+    --fc-title: #FFFFFF;
+    --fc-menu-link-hover: #F2F2F2;
+    --fc-button-hover: #02799D;
+    --fc-menu-link-active: #FFFFFF;
+
+    --bg-button-hover: #FFFFFF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+
+    background-color: rgb(45, 119, 133);
+}
+
+body,
+button {
+    font-family: var(--ff-body);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    padding: 4rem 7.2rem 4rem 7.2rem;
+}
+
+.nav-wrapper ul {
+    display: flex;
+    gap: 3.6rem;
+
+    list-style: none;
+}
+
+.nav-wrapper a {
+    font-size: var(--fs-menu);
+    font-weight: 400;
+    line-height: 2.2rem;
+    text-decoration: none;
+    color: var(--fc-menu-link);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-wrapper a:hover {
+    color: var(--fc-menu-link-hover);
+}
+
+.nav-wrapper a.active {
+    color: var(--fc-menu-link-active);
+}
+
+.title {
+    font-size: var(--fs-title);
+    color: var(--fc-title);
+}
+
+.text {
+    font-size: var(--fs-text);
+    line-height: 2.8rem;
+    color: var(--fc-text);
+}
+
+button {
+    font-size: var(--fs-button);
+    font-weight: 700;
+    color: var(--fc-button);
+    text-transform: uppercase;
+    
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 19.5rem;
+    height: 4rem;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: var(--fc-button-hover);
+    background: var(--bg-button-hover);
+}
